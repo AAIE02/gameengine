@@ -8,10 +8,15 @@
             "args": [
                 "-std=c++17",
                 "-Iinclude",
+                "-Isrc/dynamics",
                 "src/*.cc",
+                "src/collision/*.cpp",
+				"src/common/*.cpp",
+				"src/dynamics/*.cpp",
+				"src/rope/*.cpp",
                 "-o",
-                "bin/Game.exe",
-				"lib/*.a" //traer todas las librerias.a
+                "bin/game.exe",
+                "lib/*.a"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
@@ -20,7 +25,7 @@
                 "$gcc"
             ],
             "group": "build",
-            "detail": "compilador: g++"
+            "detail": "compilador: \"C:\\Program Files (x86)\\mingw-w64\\mingw32\\bin\\g++.exe\""
         }
     ]
 }
